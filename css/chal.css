@@ -1,0 +1,259 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --maincolor: rgb(0, 153, 255);
+  --twocolor: #eee;
+  --threcolor: #e0e0e0;
+}
+/* the container */
+.container {
+  position: relative;
+  width: 1108px;
+  height: 1507px;
+  background-color: var(--twocolor);
+  padding: 10px;
+  margin: 20px auto;
+  border: solid 1px #9e9e9e;
+}
+/* the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--twocolor);
+  align-items: center;
+  height: 45px;
+}
+.container nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: 109px;
+}
+
+.container nav ul li {
+  margin: 6px;
+}
+.container header .logo {
+  margin-left: 161px;
+}
+/* the article */
+article {
+  width: 1088px;
+  height: 226px;
+  background-color: var(--threcolor);
+  display: flex;
+  padding: 42px;
+  margin-top: 6px;
+  padding-top: 10px;
+}
+
+.central {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+article span {
+  color: var(--maincolor);
+}
+
+/* the section */
+section {
+  width: 1087px;
+  height: 242px;
+  background-color: var(--twocolor);
+  margin-top: 7px;
+  padding: 10px;
+  display: flex;
+}
+
+section .icon3,
+section .icon2,
+section .icon1 {
+  width: 355px;
+  height: 221px;
+  background-color: var(--twocolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+
+  margin: 1px;
+}
+
+section .icon3 img,
+section .icon2 img,
+section .icon1 img {
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+}
+
+section .icon2 h4,
+section .icon3 h4,
+section .icon1 h4 {
+  padding: 0px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+section .icon3 p,
+section .icon2 p,
+section .icon1 p {
+  padding-left: 22px;
+  font-family: "Open Sans", sans-serif;
+  color: #9e9e9e;
+}
+/* section three */
+.first {
+  background-color: #e0e0e0;
+  height: 338px;
+  width: 1087px;
+}
+section .art {
+  background-color: var(--threcolor);
+  width: 633px;
+  height: 318px;
+  margin: 1px;
+  padding-top: 52px;
+}
+.percent {
+  width: 1087px;
+  height: 155px;
+  background-color: var(--twocolor);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 170px;
+  padding-right: 170px;
+}
+.percent div {
+  width: 233px;
+  height: 95px;
+
+  padding: 15px;
+}
+.percent h1 {
+  font-size: 30px;
+  margin: 0px;
+  color: white;
+}
+.percent p {
+  margin: -3px;
+  color: var(--threcolor);
+}
+
+.percent .one {
+  background-color: #c62828;
+}
+
+.percent .two {
+  background-color: #00897b;
+}
+
+.percent .three {
+  background-color: #388e3c;
+}
+
+.rate {
+  height: 390px;
+  width: 1088px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--threcolor);
+}
+.rate div {
+  width: 738px;
+  height: 40px;
+  background-color: var(--twocolor);
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+.rate div p {
+  position: absolute;
+  right: 936px;
+}
+
+.rate .one::after {
+  position: absolute;
+  content: "60%";
+  width: 488px;
+  height: 40px;
+  background-color: var(--maincolor);
+  color: white;
+  text-align: end;
+  padding-right: 13px;
+  line-height: 40px;
+}
+.rate .one::after {
+  position: absolute;
+  content: "60%";
+  width: 433px;
+  height: 40px;
+  background-color: var(--maincolor);
+  color: white;
+  text-align: end;
+  padding-right: 13px;
+  line-height: 40px;
+}
+.rate .two::after {
+  position: absolute;
+  content: "70%";
+  width: 518px;
+  height: 40px;
+  background-color: var(--maincolor);
+  color: white;
+  text-align: end;
+  padding-right: 13px;
+  line-height: 40px;
+}
+.rate .three::after {
+  position: absolute;
+  content: "80%";
+  width: 602px;
+  height: 40px;
+  background-color: var(--maincolor);
+  color: white;
+  text-align: end;
+  padding-right: 13px;
+  line-height: 40px;
+}
+.rate .four::after {
+  position: absolute;
+  content: "65%";
+  width: 488px;
+  height: 40px;
+  background-color: var(--maincolor);
+  color: white;
+  text-align: end;
+  padding-right: 13px;
+  line-height: 40px;
+}
+.rate .five::after {
+  position: absolute;
+  content: "90%";
+  width: 654px;
+  height: 40px;
+  background-color: var(--maincolor);
+  color: white;
+  text-align: end;
+  padding-right: 13px;
+  line-height: 40px;
+}
+footer {
+  background-color: #201311;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+footer span {
+  color: var(--maincolor);
+}
